@@ -32,38 +32,40 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MyCardForm));
             this.splitContainer = new System.Windows.Forms.SplitContainer();
             this.panelHeader = new System.Windows.Forms.Panel();
+            this.dreamButtonSave = new ReaLTaiizor.Controls.DreamButton();
+            this.dreamButtonChange = new ReaLTaiizor.Controls.DreamButton();
             this.dreamButtonExit = new ReaLTaiizor.Controls.DreamButton();
             this.labelDescription = new System.Windows.Forms.Label();
             this.labelName = new System.Windows.Forms.Label();
             this.pictureBoxIcon = new System.Windows.Forms.PictureBox();
-            this.dreamButtonChange = new ReaLTaiizor.Controls.DreamButton();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.labelFIO = new System.Windows.Forms.Label();
-            this.labelEmail = new System.Windows.Forms.Label();
-            this.labelPersonalNumber = new System.Windows.Forms.Label();
-            this.labelWorkNumber = new System.Windows.Forms.Label();
+            this.hopeTextBoxFIO = new ReaLTaiizor.Controls.HopeTextBox();
+            this.hopeComboBoxOffice = new ReaLTaiizor.Controls.HopeComboBox();
+            this.subscribersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.telephone_directory_DBDataSet = new TelephoneDirectoryApp.telephone_directory_DBDataSet();
+            this.officesBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.hopeComboBoxBuilding = new ReaLTaiizor.Controls.HopeComboBox();
+            this.buildingsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.hopeComboBoxDepartment = new ReaLTaiizor.Controls.HopeComboBox();
+            this.departmentsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.hopeComboBoxPosition = new ReaLTaiizor.Controls.HopeComboBox();
+            this.positionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.hopeTextBoxEmail = new ReaLTaiizor.Controls.HopeTextBox();
+            this.hopeTextBoxPersonalNumber = new ReaLTaiizor.Controls.HopeTextBox();
+            this.hopeTextBoxWorkNumber = new ReaLTaiizor.Controls.HopeTextBox();
             this.labelOffice = new System.Windows.Forms.Label();
             this.labelPosition = new System.Windows.Forms.Label();
             this.labelBuilding = new System.Windows.Forms.Label();
             this.labelDepartment = new System.Windows.Forms.Label();
-            this.dreamButtonSave = new ReaLTaiizor.Controls.DreamButton();
-            this.hopeTextBoxWorkNumber = new ReaLTaiizor.Controls.HopeTextBox();
-            this.hopeTextBoxPersonalNumber = new ReaLTaiizor.Controls.HopeTextBox();
-            this.hopeTextBoxEmail = new ReaLTaiizor.Controls.HopeTextBox();
-            this.hopeComboBoxPosition = new ReaLTaiizor.Controls.HopeComboBox();
-            this.telephone_directory_DBDataSet = new TelephoneDirectoryApp.telephone_directory_DBDataSet();
-            this.subscribersBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.labelEmail = new System.Windows.Forms.Label();
+            this.labelPersonalNumber = new System.Windows.Forms.Label();
+            this.labelWorkNumber = new System.Windows.Forms.Label();
+            this.labelFIO = new System.Windows.Forms.Label();
+            this.parrotGroupBox = new ReaLTaiizor.Controls.ParrotGroupBox();
             this.subscribersTableAdapter = new TelephoneDirectoryApp.telephone_directory_DBDataSetTableAdapters.SubscribersTableAdapter();
-            this.positionsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.positionsTableAdapter = new TelephoneDirectoryApp.telephone_directory_DBDataSetTableAdapters.PositionsTableAdapter();
-            this.hopeComboBoxDepartment = new ReaLTaiizor.Controls.HopeComboBox();
-            this.departmentsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.departmentsTableAdapter = new TelephoneDirectoryApp.telephone_directory_DBDataSetTableAdapters.DepartmentsTableAdapter();
-            this.hopeComboBoxBuilding = new ReaLTaiizor.Controls.HopeComboBox();
-            this.hopeComboBoxOffice = new ReaLTaiizor.Controls.HopeComboBox();
-            this.buildingsBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.buildingsTableAdapter = new TelephoneDirectoryApp.telephone_directory_DBDataSetTableAdapters.BuildingsTableAdapter();
-            this.officesBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.officesTableAdapter = new TelephoneDirectoryApp.telephone_directory_DBDataSetTableAdapters.OfficesTableAdapter();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer)).BeginInit();
             this.splitContainer.Panel1.SuspendLayout();
@@ -72,12 +74,12 @@
             this.panelHeader.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).BeginInit();
             this.panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.telephone_directory_DBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.subscribersBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.positionsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.departmentsBindingSource)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.buildingsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.telephone_directory_DBDataSet)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.officesBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buildingsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.departmentsBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.positionsBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // splitContainer
@@ -94,7 +96,7 @@
             // splitContainer.Panel2
             // 
             this.splitContainer.Panel2.Controls.Add(this.panel1);
-            this.splitContainer.Size = new System.Drawing.Size(467, 635);
+            this.splitContainer.Size = new System.Drawing.Size(467, 557);
             this.splitContainer.SplitterDistance = 97;
             this.splitContainer.TabIndex = 3;
             // 
@@ -112,6 +114,44 @@
             this.panelHeader.Name = "panelHeader";
             this.panelHeader.Size = new System.Drawing.Size(467, 97);
             this.panelHeader.TabIndex = 0;
+            // 
+            // dreamButtonSave
+            // 
+            this.dreamButtonSave.ColorA = System.Drawing.Color.Aqua;
+            this.dreamButtonSave.ColorB = System.Drawing.Color.Aqua;
+            this.dreamButtonSave.ColorC = System.Drawing.Color.DarkCyan;
+            this.dreamButtonSave.ColorD = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.dreamButtonSave.ColorE = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.dreamButtonSave.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dreamButtonSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.dreamButtonSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(252)))), ((int)(((byte)(255)))));
+            this.dreamButtonSave.Location = new System.Drawing.Point(247, 64);
+            this.dreamButtonSave.Margin = new System.Windows.Forms.Padding(0);
+            this.dreamButtonSave.Name = "dreamButtonSave";
+            this.dreamButtonSave.Size = new System.Drawing.Size(110, 26);
+            this.dreamButtonSave.TabIndex = 10;
+            this.dreamButtonSave.Text = "Сохранить";
+            this.dreamButtonSave.UseVisualStyleBackColor = true;
+            this.dreamButtonSave.Click += new System.EventHandler(this.dreamButtonSave_Click);
+            // 
+            // dreamButtonChange
+            // 
+            this.dreamButtonChange.ColorA = System.Drawing.Color.Aqua;
+            this.dreamButtonChange.ColorB = System.Drawing.Color.Aqua;
+            this.dreamButtonChange.ColorC = System.Drawing.Color.DarkCyan;
+            this.dreamButtonChange.ColorD = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.dreamButtonChange.ColorE = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.dreamButtonChange.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dreamButtonChange.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.dreamButtonChange.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(252)))), ((int)(((byte)(255)))));
+            this.dreamButtonChange.Location = new System.Drawing.Point(247, 64);
+            this.dreamButtonChange.Margin = new System.Windows.Forms.Padding(0);
+            this.dreamButtonChange.Name = "dreamButtonChange";
+            this.dreamButtonChange.Size = new System.Drawing.Size(110, 26);
+            this.dreamButtonChange.TabIndex = 9;
+            this.dreamButtonChange.Text = "Изменить";
+            this.dreamButtonChange.UseVisualStyleBackColor = true;
+            this.dreamButtonChange.Click += new System.EventHandler(this.dreamButtonChange_Click);
             // 
             // dreamButtonExit
             // 
@@ -164,28 +204,10 @@
             this.pictureBoxIcon.TabIndex = 0;
             this.pictureBoxIcon.TabStop = false;
             // 
-            // dreamButtonChange
-            // 
-            this.dreamButtonChange.ColorA = System.Drawing.Color.Aqua;
-            this.dreamButtonChange.ColorB = System.Drawing.Color.Aqua;
-            this.dreamButtonChange.ColorC = System.Drawing.Color.DarkCyan;
-            this.dreamButtonChange.ColorD = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.dreamButtonChange.ColorE = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.dreamButtonChange.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dreamButtonChange.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.dreamButtonChange.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(252)))), ((int)(((byte)(255)))));
-            this.dreamButtonChange.Location = new System.Drawing.Point(247, 64);
-            this.dreamButtonChange.Margin = new System.Windows.Forms.Padding(0);
-            this.dreamButtonChange.Name = "dreamButtonChange";
-            this.dreamButtonChange.Size = new System.Drawing.Size(110, 26);
-            this.dreamButtonChange.TabIndex = 9;
-            this.dreamButtonChange.Text = "Изменить";
-            this.dreamButtonChange.UseVisualStyleBackColor = true;
-            this.dreamButtonChange.Click += new System.EventHandler(this.dreamButtonChange_Click);
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(109)))), ((int)(((byte)(91)))));
+            this.panel1.Controls.Add(this.hopeTextBoxFIO);
             this.panel1.Controls.Add(this.hopeComboBoxOffice);
             this.panel1.Controls.Add(this.hopeComboBoxBuilding);
             this.panel1.Controls.Add(this.hopeComboBoxDepartment);
@@ -201,223 +223,95 @@
             this.panel1.Controls.Add(this.labelPersonalNumber);
             this.panel1.Controls.Add(this.labelWorkNumber);
             this.panel1.Controls.Add(this.labelFIO);
+            this.panel1.Controls.Add(this.parrotGroupBox);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(467, 534);
+            this.panel1.Size = new System.Drawing.Size(467, 456);
             this.panel1.TabIndex = 0;
             // 
-            // labelFIO
+            // hopeTextBoxFIO
             // 
-            this.labelFIO.AutoSize = true;
-            this.labelFIO.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelFIO.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(17)))), ((int)(((byte)(5)))));
-            this.labelFIO.Location = new System.Drawing.Point(96, 38);
-            this.labelFIO.Name = "labelFIO";
-            this.labelFIO.Size = new System.Drawing.Size(263, 25);
-            this.labelFIO.TabIndex = 6;
-            this.labelFIO.Text = "Иванов Иван Иванович";
+            this.hopeTextBoxFIO.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(242)))), ((int)(((byte)(189)))));
+            this.hopeTextBoxFIO.BaseColor = System.Drawing.Color.Transparent;
+            this.hopeTextBoxFIO.BorderColorA = System.Drawing.Color.Transparent;
+            this.hopeTextBoxFIO.BorderColorB = System.Drawing.Color.Transparent;
+            this.hopeTextBoxFIO.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.hopeTextBoxFIO.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(17)))), ((int)(((byte)(5)))));
+            this.hopeTextBoxFIO.Hint = "";
+            this.hopeTextBoxFIO.Location = new System.Drawing.Point(8, 28);
+            this.hopeTextBoxFIO.MaxLength = 32767;
+            this.hopeTextBoxFIO.Multiline = true;
+            this.hopeTextBoxFIO.Name = "hopeTextBoxFIO";
+            this.hopeTextBoxFIO.PasswordChar = '\0';
+            this.hopeTextBoxFIO.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.hopeTextBoxFIO.SelectedText = "";
+            this.hopeTextBoxFIO.SelectionLength = 0;
+            this.hopeTextBoxFIO.SelectionStart = 0;
+            this.hopeTextBoxFIO.Size = new System.Drawing.Size(453, 35);
+            this.hopeTextBoxFIO.TabIndex = 34;
+            this.hopeTextBoxFIO.TabStop = false;
+            this.hopeTextBoxFIO.UseSystemPasswordChar = false;
             // 
-            // labelEmail
+            // hopeComboBoxOffice
             // 
-            this.labelEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(17)))), ((int)(((byte)(5)))));
-            this.labelEmail.Location = new System.Drawing.Point(12, 191);
-            this.labelEmail.Name = "labelEmail";
-            this.labelEmail.Size = new System.Drawing.Size(443, 70);
-            this.labelEmail.TabIndex = 16;
-            this.labelEmail.Text = "Адрес электронной почты:";
-            // 
-            // labelPersonalNumber
-            // 
-            this.labelPersonalNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelPersonalNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(17)))), ((int)(((byte)(5)))));
-            this.labelPersonalNumber.Location = new System.Drawing.Point(12, 147);
-            this.labelPersonalNumber.Name = "labelPersonalNumber";
-            this.labelPersonalNumber.Size = new System.Drawing.Size(443, 32);
-            this.labelPersonalNumber.TabIndex = 15;
-            this.labelPersonalNumber.Text = "Личный номер:";
-            // 
-            // labelWorkNumber
-            // 
-            this.labelWorkNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelWorkNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(17)))), ((int)(((byte)(5)))));
-            this.labelWorkNumber.Location = new System.Drawing.Point(12, 102);
-            this.labelWorkNumber.Name = "labelWorkNumber";
-            this.labelWorkNumber.Size = new System.Drawing.Size(443, 30);
-            this.labelWorkNumber.TabIndex = 14;
-            this.labelWorkNumber.Text = "Рабочий номер:";
-            // 
-            // labelOffice
-            // 
-            this.labelOffice.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelOffice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(17)))), ((int)(((byte)(5)))));
-            this.labelOffice.Location = new System.Drawing.Point(12, 409);
-            this.labelOffice.Name = "labelOffice";
-            this.labelOffice.Size = new System.Drawing.Size(245, 28);
-            this.labelOffice.TabIndex = 20;
-            this.labelOffice.Text = "Кабинет:";
-            // 
-            // labelPosition
-            // 
-            this.labelPosition.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelPosition.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(17)))), ((int)(((byte)(5)))));
-            this.labelPosition.Location = new System.Drawing.Point(12, 264);
-            this.labelPosition.Name = "labelPosition";
-            this.labelPosition.Size = new System.Drawing.Size(443, 28);
-            this.labelPosition.TabIndex = 17;
-            this.labelPosition.Text = "Должность:";
-            // 
-            // labelBuilding
-            // 
-            this.labelBuilding.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelBuilding.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(17)))), ((int)(((byte)(5)))));
-            this.labelBuilding.Location = new System.Drawing.Point(12, 358);
-            this.labelBuilding.Name = "labelBuilding";
-            this.labelBuilding.Size = new System.Drawing.Size(245, 29);
-            this.labelBuilding.TabIndex = 19;
-            this.labelBuilding.Text = "Корпус:";
-            // 
-            // labelDepartment
-            // 
-            this.labelDepartment.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelDepartment.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(17)))), ((int)(((byte)(5)))));
-            this.labelDepartment.Location = new System.Drawing.Point(12, 310);
-            this.labelDepartment.Name = "labelDepartment";
-            this.labelDepartment.Size = new System.Drawing.Size(443, 29);
-            this.labelDepartment.TabIndex = 18;
-            this.labelDepartment.Text = "Подразделение:";
-            // 
-            // dreamButtonSave
-            // 
-            this.dreamButtonSave.ColorA = System.Drawing.Color.Aqua;
-            this.dreamButtonSave.ColorB = System.Drawing.Color.Aqua;
-            this.dreamButtonSave.ColorC = System.Drawing.Color.DarkCyan;
-            this.dreamButtonSave.ColorD = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.dreamButtonSave.ColorE = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.dreamButtonSave.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dreamButtonSave.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.dreamButtonSave.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(252)))), ((int)(((byte)(255)))));
-            this.dreamButtonSave.Location = new System.Drawing.Point(247, 64);
-            this.dreamButtonSave.Margin = new System.Windows.Forms.Padding(0);
-            this.dreamButtonSave.Name = "dreamButtonSave";
-            this.dreamButtonSave.Size = new System.Drawing.Size(110, 26);
-            this.dreamButtonSave.TabIndex = 10;
-            this.dreamButtonSave.Text = "Сохранить";
-            this.dreamButtonSave.UseVisualStyleBackColor = true;
-            this.dreamButtonSave.Click += new System.EventHandler(this.dreamButtonSave_Click);
-            // 
-            // hopeTextBoxWorkNumber
-            // 
-            this.hopeTextBoxWorkNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(242)))), ((int)(((byte)(189)))));
-            this.hopeTextBoxWorkNumber.BaseColor = System.Drawing.Color.Transparent;
-            this.hopeTextBoxWorkNumber.BorderColorA = System.Drawing.Color.Transparent;
-            this.hopeTextBoxWorkNumber.BorderColorB = System.Drawing.Color.Transparent;
-            this.hopeTextBoxWorkNumber.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.hopeTextBoxWorkNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(17)))), ((int)(((byte)(5)))));
-            this.hopeTextBoxWorkNumber.Hint = "";
-            this.hopeTextBoxWorkNumber.Location = new System.Drawing.Point(175, 101);
-            this.hopeTextBoxWorkNumber.MaxLength = 32767;
-            this.hopeTextBoxWorkNumber.Multiline = true;
-            this.hopeTextBoxWorkNumber.Name = "hopeTextBoxWorkNumber";
-            this.hopeTextBoxWorkNumber.PasswordChar = '\0';
-            this.hopeTextBoxWorkNumber.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.hopeTextBoxWorkNumber.SelectedText = "";
-            this.hopeTextBoxWorkNumber.SelectionLength = 0;
-            this.hopeTextBoxWorkNumber.SelectionStart = 0;
-            this.hopeTextBoxWorkNumber.Size = new System.Drawing.Size(280, 29);
-            this.hopeTextBoxWorkNumber.TabIndex = 21;
-            this.hopeTextBoxWorkNumber.TabStop = false;
-            this.hopeTextBoxWorkNumber.UseSystemPasswordChar = false;
-            // 
-            // hopeTextBoxPersonalNumber
-            // 
-            this.hopeTextBoxPersonalNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(242)))), ((int)(((byte)(189)))));
-            this.hopeTextBoxPersonalNumber.BaseColor = System.Drawing.Color.Transparent;
-            this.hopeTextBoxPersonalNumber.BorderColorA = System.Drawing.Color.Transparent;
-            this.hopeTextBoxPersonalNumber.BorderColorB = System.Drawing.Color.Transparent;
-            this.hopeTextBoxPersonalNumber.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.hopeTextBoxPersonalNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(17)))), ((int)(((byte)(5)))));
-            this.hopeTextBoxPersonalNumber.Hint = "";
-            this.hopeTextBoxPersonalNumber.Location = new System.Drawing.Point(166, 146);
-            this.hopeTextBoxPersonalNumber.MaxLength = 32767;
-            this.hopeTextBoxPersonalNumber.Multiline = true;
-            this.hopeTextBoxPersonalNumber.Name = "hopeTextBoxPersonalNumber";
-            this.hopeTextBoxPersonalNumber.PasswordChar = '\0';
-            this.hopeTextBoxPersonalNumber.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.hopeTextBoxPersonalNumber.SelectedText = "";
-            this.hopeTextBoxPersonalNumber.SelectionLength = 0;
-            this.hopeTextBoxPersonalNumber.SelectionStart = 0;
-            this.hopeTextBoxPersonalNumber.Size = new System.Drawing.Size(289, 29);
-            this.hopeTextBoxPersonalNumber.TabIndex = 22;
-            this.hopeTextBoxPersonalNumber.TabStop = false;
-            this.hopeTextBoxPersonalNumber.UseSystemPasswordChar = false;
-            // 
-            // hopeTextBoxEmail
-            // 
-            this.hopeTextBoxEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(242)))), ((int)(((byte)(189)))));
-            this.hopeTextBoxEmail.BaseColor = System.Drawing.Color.Transparent;
-            this.hopeTextBoxEmail.BorderColorA = System.Drawing.Color.Transparent;
-            this.hopeTextBoxEmail.BorderColorB = System.Drawing.Color.Transparent;
-            this.hopeTextBoxEmail.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.hopeTextBoxEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(17)))), ((int)(((byte)(5)))));
-            this.hopeTextBoxEmail.Hint = "";
-            this.hopeTextBoxEmail.Location = new System.Drawing.Point(16, 218);
-            this.hopeTextBoxEmail.MaxLength = 32767;
-            this.hopeTextBoxEmail.Multiline = true;
-            this.hopeTextBoxEmail.Name = "hopeTextBoxEmail";
-            this.hopeTextBoxEmail.PasswordChar = '\0';
-            this.hopeTextBoxEmail.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.hopeTextBoxEmail.SelectedText = "";
-            this.hopeTextBoxEmail.SelectionLength = 0;
-            this.hopeTextBoxEmail.SelectionStart = 0;
-            this.hopeTextBoxEmail.Size = new System.Drawing.Size(439, 29);
-            this.hopeTextBoxEmail.TabIndex = 23;
-            this.hopeTextBoxEmail.TabStop = false;
-            this.hopeTextBoxEmail.UseSystemPasswordChar = false;
-            // 
-            // hopeComboBoxPosition
-            // 
-            this.hopeComboBoxPosition.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(242)))), ((int)(((byte)(189)))));
-            this.hopeComboBoxPosition.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.hopeComboBoxPosition.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.subscribersBindingSource, "PositionId", true));
-            this.hopeComboBoxPosition.DataSource = this.positionsBindingSource;
-            this.hopeComboBoxPosition.DisplayMember = "PositionName";
-            this.hopeComboBoxPosition.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.hopeComboBoxPosition.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.hopeComboBoxPosition.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.hopeComboBoxPosition.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.hopeComboBoxPosition.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(17)))), ((int)(((byte)(5)))));
-            this.hopeComboBoxPosition.FormattingEnabled = true;
-            this.hopeComboBoxPosition.ItemHeight = 23;
-            this.hopeComboBoxPosition.Location = new System.Drawing.Point(137, 263);
-            this.hopeComboBoxPosition.Name = "hopeComboBoxPosition";
-            this.hopeComboBoxPosition.Size = new System.Drawing.Size(318, 29);
-            this.hopeComboBoxPosition.TabIndex = 29;
-            this.hopeComboBoxPosition.ValueMember = "IdPosition";
-            // 
-            // telephone_directory_DBDataSet
-            // 
-            this.telephone_directory_DBDataSet.DataSetName = "telephone_directory_DBDataSet";
-            this.telephone_directory_DBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            this.hopeComboBoxOffice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(242)))), ((int)(((byte)(189)))));
+            this.hopeComboBoxOffice.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.hopeComboBoxOffice.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.subscribersBindingSource, "OfficeId", true));
+            this.hopeComboBoxOffice.DataSource = this.officesBindingSource;
+            this.hopeComboBoxOffice.DisplayMember = "RoomNumber";
+            this.hopeComboBoxOffice.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.hopeComboBoxOffice.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.hopeComboBoxOffice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.hopeComboBoxOffice.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.hopeComboBoxOffice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(17)))), ((int)(((byte)(5)))));
+            this.hopeComboBoxOffice.FormattingEnabled = true;
+            this.hopeComboBoxOffice.ItemHeight = 23;
+            this.hopeComboBoxOffice.Location = new System.Drawing.Point(109, 408);
+            this.hopeComboBoxOffice.Name = "hopeComboBoxOffice";
+            this.hopeComboBoxOffice.Size = new System.Drawing.Size(148, 29);
+            this.hopeComboBoxOffice.TabIndex = 32;
+            this.hopeComboBoxOffice.ValueMember = "IdOffice";
             // 
             // subscribersBindingSource
             // 
             this.subscribersBindingSource.DataMember = "Subscribers";
             this.subscribersBindingSource.DataSource = this.telephone_directory_DBDataSet;
             // 
-            // subscribersTableAdapter
+            // telephone_directory_DBDataSet
             // 
-            this.subscribersTableAdapter.ClearBeforeFill = true;
+            this.telephone_directory_DBDataSet.DataSetName = "telephone_directory_DBDataSet";
+            this.telephone_directory_DBDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // positionsBindingSource
+            // officesBindingSource
             // 
-            this.positionsBindingSource.DataMember = "Positions";
-            this.positionsBindingSource.DataSource = this.telephone_directory_DBDataSet;
+            this.officesBindingSource.DataMember = "Offices";
+            this.officesBindingSource.DataSource = this.telephone_directory_DBDataSet;
             // 
-            // positionsTableAdapter
+            // hopeComboBoxBuilding
             // 
-            this.positionsTableAdapter.ClearBeforeFill = true;
+            this.hopeComboBoxBuilding.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(242)))), ((int)(((byte)(189)))));
+            this.hopeComboBoxBuilding.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.hopeComboBoxBuilding.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.subscribersBindingSource, "BuildingId", true));
+            this.hopeComboBoxBuilding.DataSource = this.buildingsBindingSource;
+            this.hopeComboBoxBuilding.DisplayMember = "BuildingName";
+            this.hopeComboBoxBuilding.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.hopeComboBoxBuilding.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.hopeComboBoxBuilding.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.hopeComboBoxBuilding.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.hopeComboBoxBuilding.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(17)))), ((int)(((byte)(5)))));
+            this.hopeComboBoxBuilding.FormattingEnabled = true;
+            this.hopeComboBoxBuilding.ItemHeight = 23;
+            this.hopeComboBoxBuilding.Location = new System.Drawing.Point(96, 357);
+            this.hopeComboBoxBuilding.Name = "hopeComboBoxBuilding";
+            this.hopeComboBoxBuilding.Size = new System.Drawing.Size(161, 29);
+            this.hopeComboBoxBuilding.TabIndex = 31;
+            this.hopeComboBoxBuilding.ValueMember = "IdBuilding";
+            // 
+            // buildingsBindingSource
+            // 
+            this.buildingsBindingSource.DataMember = "Buildings";
+            this.buildingsBindingSource.DataSource = this.telephone_directory_DBDataSet;
             // 
             // hopeComboBoxDepartment
             // 
@@ -444,63 +338,218 @@
             this.departmentsBindingSource.DataMember = "Departments";
             this.departmentsBindingSource.DataSource = this.telephone_directory_DBDataSet;
             // 
+            // hopeComboBoxPosition
+            // 
+            this.hopeComboBoxPosition.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(242)))), ((int)(((byte)(189)))));
+            this.hopeComboBoxPosition.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.hopeComboBoxPosition.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.subscribersBindingSource, "PositionId", true));
+            this.hopeComboBoxPosition.DataSource = this.positionsBindingSource;
+            this.hopeComboBoxPosition.DisplayMember = "PositionName";
+            this.hopeComboBoxPosition.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+            this.hopeComboBoxPosition.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.hopeComboBoxPosition.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.hopeComboBoxPosition.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.hopeComboBoxPosition.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(17)))), ((int)(((byte)(5)))));
+            this.hopeComboBoxPosition.FormattingEnabled = true;
+            this.hopeComboBoxPosition.ItemHeight = 23;
+            this.hopeComboBoxPosition.Location = new System.Drawing.Point(137, 263);
+            this.hopeComboBoxPosition.Name = "hopeComboBoxPosition";
+            this.hopeComboBoxPosition.Size = new System.Drawing.Size(318, 29);
+            this.hopeComboBoxPosition.TabIndex = 29;
+            this.hopeComboBoxPosition.ValueMember = "IdPosition";
+            // 
+            // positionsBindingSource
+            // 
+            this.positionsBindingSource.DataMember = "Positions";
+            this.positionsBindingSource.DataSource = this.telephone_directory_DBDataSet;
+            // 
+            // hopeTextBoxEmail
+            // 
+            this.hopeTextBoxEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(242)))), ((int)(((byte)(189)))));
+            this.hopeTextBoxEmail.BaseColor = System.Drawing.Color.Transparent;
+            this.hopeTextBoxEmail.BorderColorA = System.Drawing.Color.Transparent;
+            this.hopeTextBoxEmail.BorderColorB = System.Drawing.Color.Transparent;
+            this.hopeTextBoxEmail.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.hopeTextBoxEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(17)))), ((int)(((byte)(5)))));
+            this.hopeTextBoxEmail.Hint = "";
+            this.hopeTextBoxEmail.Location = new System.Drawing.Point(16, 218);
+            this.hopeTextBoxEmail.MaxLength = 32767;
+            this.hopeTextBoxEmail.Multiline = true;
+            this.hopeTextBoxEmail.Name = "hopeTextBoxEmail";
+            this.hopeTextBoxEmail.PasswordChar = '\0';
+            this.hopeTextBoxEmail.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.hopeTextBoxEmail.SelectedText = "";
+            this.hopeTextBoxEmail.SelectionLength = 0;
+            this.hopeTextBoxEmail.SelectionStart = 0;
+            this.hopeTextBoxEmail.Size = new System.Drawing.Size(439, 35);
+            this.hopeTextBoxEmail.TabIndex = 23;
+            this.hopeTextBoxEmail.TabStop = false;
+            this.hopeTextBoxEmail.UseSystemPasswordChar = false;
+            // 
+            // hopeTextBoxPersonalNumber
+            // 
+            this.hopeTextBoxPersonalNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(242)))), ((int)(((byte)(189)))));
+            this.hopeTextBoxPersonalNumber.BaseColor = System.Drawing.Color.Transparent;
+            this.hopeTextBoxPersonalNumber.BorderColorA = System.Drawing.Color.Transparent;
+            this.hopeTextBoxPersonalNumber.BorderColorB = System.Drawing.Color.Transparent;
+            this.hopeTextBoxPersonalNumber.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.hopeTextBoxPersonalNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(17)))), ((int)(((byte)(5)))));
+            this.hopeTextBoxPersonalNumber.Hint = "";
+            this.hopeTextBoxPersonalNumber.Location = new System.Drawing.Point(166, 143);
+            this.hopeTextBoxPersonalNumber.MaxLength = 32767;
+            this.hopeTextBoxPersonalNumber.Multiline = true;
+            this.hopeTextBoxPersonalNumber.Name = "hopeTextBoxPersonalNumber";
+            this.hopeTextBoxPersonalNumber.PasswordChar = '\0';
+            this.hopeTextBoxPersonalNumber.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.hopeTextBoxPersonalNumber.SelectedText = "";
+            this.hopeTextBoxPersonalNumber.SelectionLength = 0;
+            this.hopeTextBoxPersonalNumber.SelectionStart = 0;
+            this.hopeTextBoxPersonalNumber.Size = new System.Drawing.Size(289, 35);
+            this.hopeTextBoxPersonalNumber.TabIndex = 22;
+            this.hopeTextBoxPersonalNumber.TabStop = false;
+            this.hopeTextBoxPersonalNumber.UseSystemPasswordChar = false;
+            // 
+            // hopeTextBoxWorkNumber
+            // 
+            this.hopeTextBoxWorkNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(242)))), ((int)(((byte)(189)))));
+            this.hopeTextBoxWorkNumber.BaseColor = System.Drawing.Color.Transparent;
+            this.hopeTextBoxWorkNumber.BorderColorA = System.Drawing.Color.Transparent;
+            this.hopeTextBoxWorkNumber.BorderColorB = System.Drawing.Color.Transparent;
+            this.hopeTextBoxWorkNumber.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.hopeTextBoxWorkNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(17)))), ((int)(((byte)(5)))));
+            this.hopeTextBoxWorkNumber.Hint = "";
+            this.hopeTextBoxWorkNumber.Location = new System.Drawing.Point(175, 99);
+            this.hopeTextBoxWorkNumber.MaxLength = 32767;
+            this.hopeTextBoxWorkNumber.Multiline = true;
+            this.hopeTextBoxWorkNumber.Name = "hopeTextBoxWorkNumber";
+            this.hopeTextBoxWorkNumber.PasswordChar = '\0';
+            this.hopeTextBoxWorkNumber.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.hopeTextBoxWorkNumber.SelectedText = "";
+            this.hopeTextBoxWorkNumber.SelectionLength = 0;
+            this.hopeTextBoxWorkNumber.SelectionStart = 0;
+            this.hopeTextBoxWorkNumber.Size = new System.Drawing.Size(280, 35);
+            this.hopeTextBoxWorkNumber.TabIndex = 21;
+            this.hopeTextBoxWorkNumber.TabStop = false;
+            this.hopeTextBoxWorkNumber.UseSystemPasswordChar = false;
+            // 
+            // labelOffice
+            // 
+            this.labelOffice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(242)))), ((int)(((byte)(189)))));
+            this.labelOffice.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelOffice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(17)))), ((int)(((byte)(5)))));
+            this.labelOffice.Location = new System.Drawing.Point(12, 409);
+            this.labelOffice.Name = "labelOffice";
+            this.labelOffice.Size = new System.Drawing.Size(245, 28);
+            this.labelOffice.TabIndex = 20;
+            this.labelOffice.Text = "Кабинет:";
+            // 
+            // labelPosition
+            // 
+            this.labelPosition.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(242)))), ((int)(((byte)(189)))));
+            this.labelPosition.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelPosition.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(17)))), ((int)(((byte)(5)))));
+            this.labelPosition.Location = new System.Drawing.Point(12, 264);
+            this.labelPosition.Name = "labelPosition";
+            this.labelPosition.Size = new System.Drawing.Size(443, 28);
+            this.labelPosition.TabIndex = 17;
+            this.labelPosition.Text = "Должность:";
+            // 
+            // labelBuilding
+            // 
+            this.labelBuilding.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(242)))), ((int)(((byte)(189)))));
+            this.labelBuilding.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelBuilding.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(17)))), ((int)(((byte)(5)))));
+            this.labelBuilding.Location = new System.Drawing.Point(12, 358);
+            this.labelBuilding.Name = "labelBuilding";
+            this.labelBuilding.Size = new System.Drawing.Size(245, 29);
+            this.labelBuilding.TabIndex = 19;
+            this.labelBuilding.Text = "Корпус:";
+            // 
+            // labelDepartment
+            // 
+            this.labelDepartment.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(242)))), ((int)(((byte)(189)))));
+            this.labelDepartment.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelDepartment.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(17)))), ((int)(((byte)(5)))));
+            this.labelDepartment.Location = new System.Drawing.Point(12, 310);
+            this.labelDepartment.Name = "labelDepartment";
+            this.labelDepartment.Size = new System.Drawing.Size(443, 29);
+            this.labelDepartment.TabIndex = 18;
+            this.labelDepartment.Text = "Подразделение:";
+            // 
+            // labelEmail
+            // 
+            this.labelEmail.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(242)))), ((int)(((byte)(189)))));
+            this.labelEmail.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelEmail.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(17)))), ((int)(((byte)(5)))));
+            this.labelEmail.Location = new System.Drawing.Point(12, 191);
+            this.labelEmail.Name = "labelEmail";
+            this.labelEmail.Size = new System.Drawing.Size(443, 70);
+            this.labelEmail.TabIndex = 16;
+            this.labelEmail.Text = "Адрес электронной почты:";
+            // 
+            // labelPersonalNumber
+            // 
+            this.labelPersonalNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(242)))), ((int)(((byte)(189)))));
+            this.labelPersonalNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelPersonalNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(17)))), ((int)(((byte)(5)))));
+            this.labelPersonalNumber.Location = new System.Drawing.Point(12, 147);
+            this.labelPersonalNumber.Name = "labelPersonalNumber";
+            this.labelPersonalNumber.Size = new System.Drawing.Size(443, 32);
+            this.labelPersonalNumber.TabIndex = 15;
+            this.labelPersonalNumber.Text = "Личный номер:";
+            // 
+            // labelWorkNumber
+            // 
+            this.labelWorkNumber.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(242)))), ((int)(((byte)(189)))));
+            this.labelWorkNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelWorkNumber.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(17)))), ((int)(((byte)(5)))));
+            this.labelWorkNumber.Location = new System.Drawing.Point(12, 102);
+            this.labelWorkNumber.Name = "labelWorkNumber";
+            this.labelWorkNumber.Size = new System.Drawing.Size(443, 30);
+            this.labelWorkNumber.TabIndex = 14;
+            this.labelWorkNumber.Text = "Рабочий номер:";
+            // 
+            // labelFIO
+            // 
+            this.labelFIO.AutoSize = true;
+            this.labelFIO.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.labelFIO.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(17)))), ((int)(((byte)(5)))));
+            this.labelFIO.Location = new System.Drawing.Point(9, 28);
+            this.labelFIO.Name = "labelFIO";
+            this.labelFIO.Size = new System.Drawing.Size(263, 25);
+            this.labelFIO.TabIndex = 6;
+            this.labelFIO.Text = "Иванов Иван Иванович";
+            // 
+            // parrotGroupBox
+            // 
+            this.parrotGroupBox.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(242)))), ((int)(((byte)(189)))));
+            this.parrotGroupBox.BorderColor = System.Drawing.Color.Crimson;
+            this.parrotGroupBox.BorderWidth = 1;
+            this.parrotGroupBox.Location = new System.Drawing.Point(7, 82);
+            this.parrotGroupBox.Name = "parrotGroupBox";
+            this.parrotGroupBox.ShowText = true;
+            this.parrotGroupBox.Size = new System.Drawing.Size(453, 367);
+            this.parrotGroupBox.TabIndex = 33;
+            this.parrotGroupBox.TabStop = false;
+            this.parrotGroupBox.Tag = "";
+            this.parrotGroupBox.Text = "Информация";
+            this.parrotGroupBox.TextColor = System.Drawing.Color.Crimson;
+            // 
+            // subscribersTableAdapter
+            // 
+            this.subscribersTableAdapter.ClearBeforeFill = true;
+            // 
+            // positionsTableAdapter
+            // 
+            this.positionsTableAdapter.ClearBeforeFill = true;
+            // 
             // departmentsTableAdapter
             // 
             this.departmentsTableAdapter.ClearBeforeFill = true;
             // 
-            // hopeComboBoxBuilding
-            // 
-            this.hopeComboBoxBuilding.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(242)))), ((int)(((byte)(189)))));
-            this.hopeComboBoxBuilding.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.hopeComboBoxBuilding.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.subscribersBindingSource, "BuildingId", true));
-            this.hopeComboBoxBuilding.DataSource = this.buildingsBindingSource;
-            this.hopeComboBoxBuilding.DisplayMember = "BuildingName";
-            this.hopeComboBoxBuilding.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.hopeComboBoxBuilding.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.hopeComboBoxBuilding.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.hopeComboBoxBuilding.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.hopeComboBoxBuilding.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(17)))), ((int)(((byte)(5)))));
-            this.hopeComboBoxBuilding.FormattingEnabled = true;
-            this.hopeComboBoxBuilding.ItemHeight = 23;
-            this.hopeComboBoxBuilding.Location = new System.Drawing.Point(96, 357);
-            this.hopeComboBoxBuilding.Name = "hopeComboBoxBuilding";
-            this.hopeComboBoxBuilding.Size = new System.Drawing.Size(161, 29);
-            this.hopeComboBoxBuilding.TabIndex = 31;
-            this.hopeComboBoxBuilding.ValueMember = "IdBuilding";
-            // 
-            // hopeComboBoxOffice
-            // 
-            this.hopeComboBoxOffice.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(242)))), ((int)(((byte)(189)))));
-            this.hopeComboBoxOffice.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.hopeComboBoxOffice.DataBindings.Add(new System.Windows.Forms.Binding("SelectedValue", this.subscribersBindingSource, "OfficeId", true));
-            this.hopeComboBoxOffice.DataSource = this.officesBindingSource;
-            this.hopeComboBoxOffice.DisplayMember = "RoomNumber";
-            this.hopeComboBoxOffice.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
-            this.hopeComboBoxOffice.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.hopeComboBoxOffice.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.hopeComboBoxOffice.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.hopeComboBoxOffice.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(17)))), ((int)(((byte)(5)))));
-            this.hopeComboBoxOffice.FormattingEnabled = true;
-            this.hopeComboBoxOffice.ItemHeight = 23;
-            this.hopeComboBoxOffice.Location = new System.Drawing.Point(109, 408);
-            this.hopeComboBoxOffice.Name = "hopeComboBoxOffice";
-            this.hopeComboBoxOffice.Size = new System.Drawing.Size(148, 29);
-            this.hopeComboBoxOffice.TabIndex = 32;
-            this.hopeComboBoxOffice.ValueMember = "IdOffice";
-            // 
-            // buildingsBindingSource
-            // 
-            this.buildingsBindingSource.DataMember = "Buildings";
-            this.buildingsBindingSource.DataSource = this.telephone_directory_DBDataSet;
-            // 
             // buildingsTableAdapter
             // 
             this.buildingsTableAdapter.ClearBeforeFill = true;
-            // 
-            // officesBindingSource
-            // 
-            this.officesBindingSource.DataMember = "Offices";
-            this.officesBindingSource.DataSource = this.telephone_directory_DBDataSet;
             // 
             // officesTableAdapter
             // 
@@ -511,7 +560,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Crimson;
-            this.ClientSize = new System.Drawing.Size(467, 635);
+            this.ClientSize = new System.Drawing.Size(467, 557);
             this.Controls.Add(this.splitContainer);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -527,12 +576,12 @@
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.telephone_directory_DBDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.subscribersBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.positionsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.departmentsBindingSource)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.buildingsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.telephone_directory_DBDataSet)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.officesBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.buildingsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.departmentsBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.positionsBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -574,5 +623,7 @@
         private telephone_directory_DBDataSetTableAdapters.BuildingsTableAdapter buildingsTableAdapter;
         private System.Windows.Forms.BindingSource officesBindingSource;
         private telephone_directory_DBDataSetTableAdapters.OfficesTableAdapter officesTableAdapter;
+        private ReaLTaiizor.Controls.ParrotGroupBox parrotGroupBox;
+        private ReaLTaiizor.Controls.HopeTextBox hopeTextBoxFIO;
     }
 }

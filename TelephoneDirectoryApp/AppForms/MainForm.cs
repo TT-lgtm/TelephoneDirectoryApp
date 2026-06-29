@@ -36,6 +36,32 @@ namespace TelephoneDirectoryApp.AppForms
                 flowLayoutPanelMain.Controls.Add(new InfoUserControl(subscriber, _currentUser));
             }
         }
+
+        private void ShowSubscribersFilter(string search = "")
+        {
+            flowLayoutPanelMain.Controls.Clear();
+
+            var subscribers = Program.context.Subscribers.AsQueryable();
+
+            if (!string.IsNullOrWhiteSpace(search))
+            {
+                search = search.ToLower();
+
+                subscribers = subscribers.Where(s =>
+                    s.Fio.Contains(search) ||
+                    s.Positions.PositionName.Contains(search) ||
+                    s.Departments.DepartmentName.Contains(search) ||
+                    (s.WorkPhoneNumber ?? "").Contains(search) ||
+                    (s.PersonalPhoneNumber ?? "").Contains(search) ||
+                    (s.EmailAdress ?? "").Contains(search));
+            }
+
+            foreach (Subscribers subscriber in subscribers.OrderBy(s => s.Fio).ToList())
+            {
+                flowLayoutPanelMain.Controls.Add(new InfoUserControl(subscriber, _currentUser));
+            }
+        }
+
         public void Refresh()
         {
             flowLayoutPanelMain.Controls.Clear();
@@ -82,6 +108,11 @@ namespace TelephoneDirectoryApp.AppForms
         private void dreamButtonExit_Click(object sender, EventArgs e)
         {
             this.Close();
+        }
+
+        private void hopeTextBoxSearch_TextChanged(object sender, EventArgs e)
+        {
+            ShowSubscribersFilter(hopeTextBoxSearch.Text);
         }
     }
 }

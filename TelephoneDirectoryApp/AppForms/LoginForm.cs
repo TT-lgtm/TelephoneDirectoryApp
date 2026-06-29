@@ -36,6 +36,11 @@ namespace TelephoneDirectoryApp.AppForms
             }
         }
 
+        /// <summary>
+        /// Валидация электронной почты
+        /// </summary>
+        /// <param name="email"></param>
+        /// <returns></returns>
         private bool IsValidEmail(string email)
         {
             if (string.IsNullOrWhiteSpace(email))

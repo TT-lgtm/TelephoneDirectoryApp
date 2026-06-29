@@ -31,19 +31,22 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.splitContainer = new System.Windows.Forms.SplitContainer();
             this.panelHeader = new System.Windows.Forms.Panel();
+            this.dreamButtonRefresh = new ReaLTaiizor.Controls.DreamButton();
             this.GreetingLabel = new System.Windows.Forms.Label();
             this.dreamButton1 = new ReaLTaiizor.Controls.DreamButton();
             this.dreamButtonExit = new ReaLTaiizor.Controls.DreamButton();
             this.labelDescription = new System.Windows.Forms.Label();
             this.labelName = new System.Windows.Forms.Label();
-            this.pictureBoxIcon = new System.Windows.Forms.PictureBox();
             this.flowLayoutPanelMain = new System.Windows.Forms.FlowLayoutPanel();
-            this.dreamButtonRefresh = new ReaLTaiizor.Controls.DreamButton();
+            this.hopeTextBoxSearch = new ReaLTaiizor.Controls.HopeTextBox();
+            this.pictureBoxUnvisible = new System.Windows.Forms.PictureBox();
+            this.pictureBoxIcon = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer)).BeginInit();
             this.splitContainer.Panel1.SuspendLayout();
             this.splitContainer.Panel2.SuspendLayout();
             this.splitContainer.SuspendLayout();
             this.panelHeader.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUnvisible)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,6 +71,8 @@
             // panelHeader
             // 
             this.panelHeader.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(104)))), ((int)(((byte)(171)))), ((int)(((byte)(46)))));
+            this.panelHeader.Controls.Add(this.pictureBoxUnvisible);
+            this.panelHeader.Controls.Add(this.hopeTextBoxSearch);
             this.panelHeader.Controls.Add(this.dreamButtonRefresh);
             this.panelHeader.Controls.Add(this.GreetingLabel);
             this.panelHeader.Controls.Add(this.dreamButton1);
@@ -80,6 +85,25 @@
             this.panelHeader.Name = "panelHeader";
             this.panelHeader.Size = new System.Drawing.Size(1429, 123);
             this.panelHeader.TabIndex = 0;
+            // 
+            // dreamButtonRefresh
+            // 
+            this.dreamButtonRefresh.ColorA = System.Drawing.Color.Aqua;
+            this.dreamButtonRefresh.ColorB = System.Drawing.Color.Aqua;
+            this.dreamButtonRefresh.ColorC = System.Drawing.Color.DarkCyan;
+            this.dreamButtonRefresh.ColorD = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
+            this.dreamButtonRefresh.ColorE = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.dreamButtonRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.dreamButtonRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.dreamButtonRefresh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(252)))), ((int)(((byte)(255)))));
+            this.dreamButtonRefresh.Location = new System.Drawing.Point(177, 92);
+            this.dreamButtonRefresh.Margin = new System.Windows.Forms.Padding(0);
+            this.dreamButtonRefresh.Name = "dreamButtonRefresh";
+            this.dreamButtonRefresh.Size = new System.Drawing.Size(112, 26);
+            this.dreamButtonRefresh.TabIndex = 11;
+            this.dreamButtonRefresh.Text = "Обновить";
+            this.dreamButtonRefresh.UseVisualStyleBackColor = true;
+            this.dreamButtonRefresh.Click += new System.EventHandler(this.dreamButtonRefresh_Click);
             // 
             // GreetingLabel
             // 
@@ -152,16 +176,6 @@
             this.labelName.TabIndex = 1;
             this.labelName.Text = "Yabblo.ko";
             // 
-            // pictureBoxIcon
-            // 
-            this.pictureBoxIcon.Image = global::TelephoneDirectoryApp.Properties.Resources.pngegg__1_;
-            this.pictureBoxIcon.Location = new System.Drawing.Point(8, 8);
-            this.pictureBoxIcon.Name = "pictureBoxIcon";
-            this.pictureBoxIcon.Size = new System.Drawing.Size(66, 80);
-            this.pictureBoxIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBoxIcon.TabIndex = 0;
-            this.pictureBoxIcon.TabStop = false;
-            // 
             // flowLayoutPanelMain
             // 
             this.flowLayoutPanelMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(109)))), ((int)(((byte)(91)))));
@@ -172,24 +186,50 @@
             this.flowLayoutPanelMain.Size = new System.Drawing.Size(1429, 554);
             this.flowLayoutPanelMain.TabIndex = 0;
             // 
-            // dreamButtonRefresh
+            // hopeTextBoxSearch
             // 
-            this.dreamButtonRefresh.ColorA = System.Drawing.Color.Aqua;
-            this.dreamButtonRefresh.ColorB = System.Drawing.Color.Aqua;
-            this.dreamButtonRefresh.ColorC = System.Drawing.Color.DarkCyan;
-            this.dreamButtonRefresh.ColorD = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(128)))), ((int)(((byte)(128)))));
-            this.dreamButtonRefresh.ColorE = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.dreamButtonRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.dreamButtonRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.dreamButtonRefresh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(252)))), ((int)(((byte)(255)))));
-            this.dreamButtonRefresh.Location = new System.Drawing.Point(177, 92);
-            this.dreamButtonRefresh.Margin = new System.Windows.Forms.Padding(0);
-            this.dreamButtonRefresh.Name = "dreamButtonRefresh";
-            this.dreamButtonRefresh.Size = new System.Drawing.Size(112, 26);
-            this.dreamButtonRefresh.TabIndex = 11;
-            this.dreamButtonRefresh.Text = "Обновить";
-            this.dreamButtonRefresh.UseVisualStyleBackColor = true;
-            this.dreamButtonRefresh.Click += new System.EventHandler(this.dreamButtonRefresh_Click);
+            this.hopeTextBoxSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(242)))), ((int)(((byte)(189)))));
+            this.hopeTextBoxSearch.BaseColor = System.Drawing.Color.Transparent;
+            this.hopeTextBoxSearch.BorderColorA = System.Drawing.Color.Transparent;
+            this.hopeTextBoxSearch.BorderColorB = System.Drawing.Color.Transparent;
+            this.hopeTextBoxSearch.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.hopeTextBoxSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(17)))), ((int)(((byte)(5)))));
+            this.hopeTextBoxSearch.Hint = "";
+            this.hopeTextBoxSearch.Location = new System.Drawing.Point(969, 80);
+            this.hopeTextBoxSearch.MaxLength = 32767;
+            this.hopeTextBoxSearch.Multiline = true;
+            this.hopeTextBoxSearch.Name = "hopeTextBoxSearch";
+            this.hopeTextBoxSearch.PasswordChar = '\0';
+            this.hopeTextBoxSearch.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.hopeTextBoxSearch.SelectedText = "";
+            this.hopeTextBoxSearch.SelectionLength = 0;
+            this.hopeTextBoxSearch.SelectionStart = 0;
+            this.hopeTextBoxSearch.Size = new System.Drawing.Size(453, 35);
+            this.hopeTextBoxSearch.TabIndex = 35;
+            this.hopeTextBoxSearch.TabStop = false;
+            this.hopeTextBoxSearch.UseSystemPasswordChar = false;
+            this.hopeTextBoxSearch.TextChanged += new System.EventHandler(this.hopeTextBoxSearch_TextChanged);
+            // 
+            // pictureBoxUnvisible
+            // 
+            this.pictureBoxUnvisible.BackColor = System.Drawing.Color.Transparent;
+            this.pictureBoxUnvisible.Image = global::TelephoneDirectoryApp.Properties.Resources.searchIcon1;
+            this.pictureBoxUnvisible.Location = new System.Drawing.Point(928, 80);
+            this.pictureBoxUnvisible.Name = "pictureBoxUnvisible";
+            this.pictureBoxUnvisible.Size = new System.Drawing.Size(35, 35);
+            this.pictureBoxUnvisible.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxUnvisible.TabIndex = 36;
+            this.pictureBoxUnvisible.TabStop = false;
+            // 
+            // pictureBoxIcon
+            // 
+            this.pictureBoxIcon.Image = global::TelephoneDirectoryApp.Properties.Resources.pngegg__1_;
+            this.pictureBoxIcon.Location = new System.Drawing.Point(8, 8);
+            this.pictureBoxIcon.Name = "pictureBoxIcon";
+            this.pictureBoxIcon.Size = new System.Drawing.Size(66, 80);
+            this.pictureBoxIcon.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBoxIcon.TabIndex = 0;
+            this.pictureBoxIcon.TabStop = false;
             // 
             // MainForm
             // 
@@ -209,6 +249,7 @@
             this.splitContainer.ResumeLayout(false);
             this.panelHeader.ResumeLayout(false);
             this.panelHeader.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBoxUnvisible)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxIcon)).EndInit();
             this.ResumeLayout(false);
 
@@ -226,5 +267,7 @@
         private System.Windows.Forms.Label GreetingLabel;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanelMain;
         private ReaLTaiizor.Controls.DreamButton dreamButtonRefresh;
+        private ReaLTaiizor.Controls.HopeTextBox hopeTextBoxSearch;
+        private System.Windows.Forms.PictureBox pictureBoxUnvisible;
     }
 }
