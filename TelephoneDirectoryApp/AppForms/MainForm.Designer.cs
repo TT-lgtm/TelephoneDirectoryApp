@@ -31,6 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.splitContainer = new System.Windows.Forms.SplitContainer();
             this.panelHeader = new System.Windows.Forms.Panel();
+            this.hopeTextBoxSearch = new ReaLTaiizor.Controls.HopeTextBox();
             this.dreamButtonRefresh = new ReaLTaiizor.Controls.DreamButton();
             this.GreetingLabel = new System.Windows.Forms.Label();
             this.dreamButton1 = new ReaLTaiizor.Controls.DreamButton();
@@ -38,7 +39,6 @@
             this.labelDescription = new System.Windows.Forms.Label();
             this.labelName = new System.Windows.Forms.Label();
             this.flowLayoutPanelMain = new System.Windows.Forms.FlowLayoutPanel();
-            this.hopeTextBoxSearch = new ReaLTaiizor.Controls.HopeTextBox();
             this.pictureBoxUnvisible = new System.Windows.Forms.PictureBox();
             this.pictureBoxIcon = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer)).BeginInit();
@@ -64,8 +64,8 @@
             // splitContainer.Panel2
             // 
             this.splitContainer.Panel2.Controls.Add(this.flowLayoutPanelMain);
-            this.splitContainer.Size = new System.Drawing.Size(1429, 681);
-            this.splitContainer.SplitterDistance = 123;
+            this.splitContainer.Size = new System.Drawing.Size(1904, 1041);
+            this.splitContainer.SplitterDistance = 127;
             this.splitContainer.TabIndex = 2;
             // 
             // panelHeader
@@ -83,8 +83,32 @@
             this.panelHeader.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panelHeader.Location = new System.Drawing.Point(0, 0);
             this.panelHeader.Name = "panelHeader";
-            this.panelHeader.Size = new System.Drawing.Size(1429, 123);
+            this.panelHeader.Size = new System.Drawing.Size(1904, 127);
             this.panelHeader.TabIndex = 0;
+            // 
+            // hopeTextBoxSearch
+            // 
+            this.hopeTextBoxSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(242)))), ((int)(((byte)(189)))));
+            this.hopeTextBoxSearch.BaseColor = System.Drawing.Color.Transparent;
+            this.hopeTextBoxSearch.BorderColorA = System.Drawing.Color.Transparent;
+            this.hopeTextBoxSearch.BorderColorB = System.Drawing.Color.Transparent;
+            this.hopeTextBoxSearch.Font = new System.Drawing.Font("Segoe UI", 12F);
+            this.hopeTextBoxSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(17)))), ((int)(((byte)(5)))));
+            this.hopeTextBoxSearch.Hint = "";
+            this.hopeTextBoxSearch.Location = new System.Drawing.Point(1441, 83);
+            this.hopeTextBoxSearch.MaxLength = 32767;
+            this.hopeTextBoxSearch.Multiline = true;
+            this.hopeTextBoxSearch.Name = "hopeTextBoxSearch";
+            this.hopeTextBoxSearch.PasswordChar = '\0';
+            this.hopeTextBoxSearch.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.hopeTextBoxSearch.SelectedText = "";
+            this.hopeTextBoxSearch.SelectionLength = 0;
+            this.hopeTextBoxSearch.SelectionStart = 0;
+            this.hopeTextBoxSearch.Size = new System.Drawing.Size(453, 35);
+            this.hopeTextBoxSearch.TabIndex = 35;
+            this.hopeTextBoxSearch.TabStop = false;
+            this.hopeTextBoxSearch.UseSystemPasswordChar = false;
+            this.hopeTextBoxSearch.TextChanged += new System.EventHandler(this.hopeTextBoxSearch_TextChanged);
             // 
             // dreamButtonRefresh
             // 
@@ -96,7 +120,7 @@
             this.dreamButtonRefresh.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dreamButtonRefresh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.dreamButtonRefresh.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(252)))), ((int)(((byte)(255)))));
-            this.dreamButtonRefresh.Location = new System.Drawing.Point(177, 92);
+            this.dreamButtonRefresh.Location = new System.Drawing.Point(177, 95);
             this.dreamButtonRefresh.Margin = new System.Windows.Forms.Padding(0);
             this.dreamButtonRefresh.Name = "dreamButtonRefresh";
             this.dreamButtonRefresh.Size = new System.Drawing.Size(112, 26);
@@ -126,7 +150,7 @@
             this.dreamButton1.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dreamButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.dreamButton1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(252)))), ((int)(((byte)(255)))));
-            this.dreamButton1.Location = new System.Drawing.Point(9, 92);
+            this.dreamButton1.Location = new System.Drawing.Point(9, 95);
             this.dreamButton1.Margin = new System.Windows.Forms.Padding(0);
             this.dreamButton1.Name = "dreamButton1";
             this.dreamButton1.Size = new System.Drawing.Size(154, 26);
@@ -145,7 +169,7 @@
             this.dreamButtonExit.Cursor = System.Windows.Forms.Cursors.Hand;
             this.dreamButtonExit.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.dreamButtonExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(252)))), ((int)(((byte)(255)))));
-            this.dreamButtonExit.Location = new System.Drawing.Point(302, 92);
+            this.dreamButtonExit.Location = new System.Drawing.Point(302, 95);
             this.dreamButtonExit.Margin = new System.Windows.Forms.Padding(0);
             this.dreamButtonExit.Name = "dreamButtonExit";
             this.dreamButtonExit.Size = new System.Drawing.Size(95, 26);
@@ -183,38 +207,14 @@
             this.flowLayoutPanelMain.Location = new System.Drawing.Point(0, 0);
             this.flowLayoutPanelMain.Margin = new System.Windows.Forms.Padding(0);
             this.flowLayoutPanelMain.Name = "flowLayoutPanelMain";
-            this.flowLayoutPanelMain.Size = new System.Drawing.Size(1429, 554);
+            this.flowLayoutPanelMain.Size = new System.Drawing.Size(1904, 910);
             this.flowLayoutPanelMain.TabIndex = 0;
-            // 
-            // hopeTextBoxSearch
-            // 
-            this.hopeTextBoxSearch.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(242)))), ((int)(((byte)(189)))));
-            this.hopeTextBoxSearch.BaseColor = System.Drawing.Color.Transparent;
-            this.hopeTextBoxSearch.BorderColorA = System.Drawing.Color.Transparent;
-            this.hopeTextBoxSearch.BorderColorB = System.Drawing.Color.Transparent;
-            this.hopeTextBoxSearch.Font = new System.Drawing.Font("Segoe UI", 12F);
-            this.hopeTextBoxSearch.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(41)))), ((int)(((byte)(17)))), ((int)(((byte)(5)))));
-            this.hopeTextBoxSearch.Hint = "";
-            this.hopeTextBoxSearch.Location = new System.Drawing.Point(969, 80);
-            this.hopeTextBoxSearch.MaxLength = 32767;
-            this.hopeTextBoxSearch.Multiline = true;
-            this.hopeTextBoxSearch.Name = "hopeTextBoxSearch";
-            this.hopeTextBoxSearch.PasswordChar = '\0';
-            this.hopeTextBoxSearch.ScrollBars = System.Windows.Forms.ScrollBars.None;
-            this.hopeTextBoxSearch.SelectedText = "";
-            this.hopeTextBoxSearch.SelectionLength = 0;
-            this.hopeTextBoxSearch.SelectionStart = 0;
-            this.hopeTextBoxSearch.Size = new System.Drawing.Size(453, 35);
-            this.hopeTextBoxSearch.TabIndex = 35;
-            this.hopeTextBoxSearch.TabStop = false;
-            this.hopeTextBoxSearch.UseSystemPasswordChar = false;
-            this.hopeTextBoxSearch.TextChanged += new System.EventHandler(this.hopeTextBoxSearch_TextChanged);
             // 
             // pictureBoxUnvisible
             // 
             this.pictureBoxUnvisible.BackColor = System.Drawing.Color.Transparent;
             this.pictureBoxUnvisible.Image = global::TelephoneDirectoryApp.Properties.Resources.searchIcon1;
-            this.pictureBoxUnvisible.Location = new System.Drawing.Point(928, 80);
+            this.pictureBoxUnvisible.Location = new System.Drawing.Point(1400, 83);
             this.pictureBoxUnvisible.Name = "pictureBoxUnvisible";
             this.pictureBoxUnvisible.Size = new System.Drawing.Size(35, 35);
             this.pictureBoxUnvisible.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -236,7 +236,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Crimson;
-            this.ClientSize = new System.Drawing.Size(1429, 681);
+            this.ClientSize = new System.Drawing.Size(1904, 1041);
             this.Controls.Add(this.splitContainer);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));

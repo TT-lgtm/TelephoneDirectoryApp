@@ -20,3 +20,4 @@ D:\Projects\TelephoneDirectoryApp\TelephoneDirectoryApp\bin\Debug\EntityFramewor
 D:\Projects\TelephoneDirectoryApp\TelephoneDirectoryApp\bin\Debug\ru\EntityFramework.resources.dll
 D:\Projects\TelephoneDirectoryApp\TelephoneDirectoryApp\obj\Debug\TelephoneDirectoryApp.CustomControls.InfoUserControl.resources
 D:\Projects\TelephoneDirectoryApp\TelephoneDirectoryApp\obj\Debug\TelephoneDirectoryApp.AppForms.MyCardForm.resources
+D:\Projects\TelephoneDirectoryApp\TelephoneDirectoryApp\obj\Debug\TelephoneDirectoryApp.ChangeCardForm.resources

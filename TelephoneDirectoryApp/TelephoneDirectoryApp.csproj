@@ -83,6 +83,12 @@
     <Compile Include="AppForms\MyCardForm.Designer.cs">
       <DependentUpon>MyCardForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="AppForms\ChangeCardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AppForms\ChangeCardForm.Designer.cs">
+      <DependentUpon>ChangeCardForm.cs</DependentUpon>
+    </Compile>
     <Compile Include="CustomControls\InfoUserControl.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -112,6 +118,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AppForms\MyCardForm.resx">
       <DependentUpon>MyCardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AppForms\ChangeCardForm.resx">
+      <DependentUpon>ChangeCardForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CustomControls\InfoUserControl.resx">
       <DependentUpon>InfoUserControl.cs</DependentUpon>

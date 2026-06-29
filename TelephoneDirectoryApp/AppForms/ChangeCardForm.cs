@@ -10,17 +10,15 @@ using System.Text;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using ReaLTaiizor.Controls;
 using TelephoneDirectoryApp.Models;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
 
-namespace TelephoneDirectoryApp.AppForms
+namespace TelephoneDirectoryApp
 {
-    public partial class MyCardForm : Form
+    public partial class ChangeCardForm : Form
     {
         private Users _currentUser;
         private Subscribers _subscribers;
-        public MyCardForm(Users users)
+        public ChangeCardForm(Users users)
         {
             InitializeComponent();
             _currentUser = users;
@@ -41,10 +39,9 @@ namespace TelephoneDirectoryApp.AppForms
             ShowUserInfo();
         }
 
-        public MyCardForm(Subscribers subscribers)
+        public ChangeCardForm(Subscribers subscribers)
         {
             InitializeComponent();
-
             _subscribers = subscribers;
 
             labelFIO.TextAlign = ContentAlignment.MiddleCenter;
@@ -150,23 +147,20 @@ namespace TelephoneDirectoryApp.AppForms
         /// </summary>
         private void ShowUserInfo()
         {
-            
-            var subscriber = Program.context.Subscribers.FirstOrDefault(s => s.UserId == _currentUser.IdUser);
-
-            if (subscriber != null)
+            if (_subscribers != null)
             {
-                
-                labelFIO.Text = $"{subscriber.Fio}";
-                labelWorkNumber.Text = $"Рабочий номер: {subscriber.WorkPhoneNumber}";
-                labelPersonalNumber.Text = $"Личный номер: {subscriber.PersonalPhoneNumber}"; 
-                labelEmail.Text = $"Адрес электронной почты: {subscriber.EmailAdress}"; 
-                labelPosition.Text = $"Должность: {subscriber.Positions.PositionName}"; 
-                labelDepartment.Text = $"Подразделение: {subscriber.Departments.DepartmentName}"; 
-                labelBuilding.Text = $"Корпус: {subscriber.Buildings.BuildingName}"; 
-                labelOffice.Text = $"Кабинет: {subscriber.Offices.RoomNumber}"; 
+
+                labelFIO.Text = $"{_subscribers.Fio}";
+                labelWorkNumber.Text = $"Рабочий номер: {_subscribers.WorkPhoneNumber}";
+                labelPersonalNumber.Text = $"Личный номер: {_subscribers.PersonalPhoneNumber}";
+                labelEmail.Text = $"Адрес электронной почты: {_subscribers.EmailAdress}";
+                labelPosition.Text = $"Должность: {_subscribers.Positions.PositionName}";
+                labelDepartment.Text = $"Подразделение: {_subscribers.Departments.DepartmentName}";
+                labelBuilding.Text = $"Корпус: {_subscribers.Buildings.BuildingName}";
+                labelOffice.Text = $"Кабинет: {_subscribers.Offices.RoomNumber}";
             }
-            else 
-            { 
+            else
+            {
                 MessageBox.Show("Не удалось получить данные. Попробуйте позже.");
                 return;
             }
@@ -205,19 +199,17 @@ namespace TelephoneDirectoryApp.AppForms
 
         private void dreamButtonChange_Click(object sender, EventArgs e)
         {
-            var subscriber = Program.context.Subscribers.FirstOrDefault(s => s.UserId == _currentUser.IdUser);
-
             // TextBox
-            hopeTextBoxFIO.Text = subscriber.Fio;
-            hopeTextBoxWorkNumber.Text = subscriber.WorkPhoneNumber;
-            hopeTextBoxPersonalNumber.Text = subscriber.PersonalPhoneNumber;
-            hopeTextBoxEmail.Text = subscriber.EmailAdress;
+            hopeTextBoxFIO.Text = _subscribers.Fio;
+            hopeTextBoxWorkNumber.Text = _subscribers.WorkPhoneNumber;
+            hopeTextBoxPersonalNumber.Text = _subscribers.PersonalPhoneNumber;
+            hopeTextBoxEmail.Text = _subscribers.EmailAdress;
 
             // ComboBox
-            hopeComboBoxPosition.SelectedValue = subscriber.PositionId;
-            hopeComboBoxDepartment.SelectedValue = subscriber.DepartmentId;
-            hopeComboBoxBuilding.SelectedValue = subscriber.BuildingId;
-            hopeComboBoxOffice.SelectedValue = subscriber.OfficeId;
+            hopeComboBoxPosition.SelectedValue = _subscribers.PositionId;
+            hopeComboBoxDepartment.SelectedValue = _subscribers.DepartmentId;
+            hopeComboBoxBuilding.SelectedValue = _subscribers.BuildingId;
+            hopeComboBoxOffice.SelectedValue = _subscribers.OfficeId;
 
             dreamButtonChange.Visible = false;
             dreamButtonSave.Visible = true;
@@ -245,16 +237,14 @@ namespace TelephoneDirectoryApp.AppForms
         private void dreamButtonSave_Click(object sender, EventArgs e)
         {
             Validate();
-            var subscriber = Program.context.Subscribers.FirstOrDefault(s => s.UserId == _currentUser.IdUser);
-
-            subscriber.WorkPhoneNumber = hopeTextBoxWorkNumber.Text.Trim();
-            subscriber.PersonalPhoneNumber = hopeTextBoxPersonalNumber.Text.Trim();
-            subscriber.EmailAdress = hopeTextBoxEmail.Text.Trim();
-            subscriber.Fio = hopeTextBoxFIO.Text.Trim();
-            subscriber.PositionId = (int)this.hopeComboBoxPosition.SelectedValue;
-            subscriber.DepartmentId = (int)this.hopeComboBoxDepartment.SelectedValue;
-            subscriber.BuildingId = (int)this.hopeComboBoxBuilding.SelectedValue;
-            subscriber.OfficeId = (int)this.hopeComboBoxOffice.SelectedValue;
+            _subscribers.WorkPhoneNumber = hopeTextBoxWorkNumber.Text.Trim();
+            _subscribers.PersonalPhoneNumber = hopeTextBoxPersonalNumber.Text.Trim();
+            _subscribers.EmailAdress = hopeTextBoxEmail.Text.Trim();
+            _subscribers.Fio = hopeTextBoxFIO.Text.Trim();
+            _subscribers.PositionId = (int)this.hopeComboBoxPosition.SelectedValue;
+            _subscribers.DepartmentId = (int)this.hopeComboBoxDepartment.SelectedValue;
+            _subscribers.BuildingId = (int)this.hopeComboBoxBuilding.SelectedValue;
+            _subscribers.OfficeId = (int)this.hopeComboBoxOffice.SelectedValue;
 
             Program.context.SaveChanges();
 
@@ -274,7 +264,7 @@ namespace TelephoneDirectoryApp.AppForms
             ShowUserInfo();
         }
 
-        private void MyCardForm_Load(object sender, EventArgs e)
+        private void ChangeCardForm_Load(object sender, EventArgs e)
         {
             // TODO: данная строка кода позволяет загрузить данные в таблицу "telephone_directory_DBDataSet.Offices". При необходимости она может быть перемещена или удалена.
             this.officesTableAdapter.Fill(this.telephone_directory_DBDataSet.Offices);
@@ -282,10 +272,10 @@ namespace TelephoneDirectoryApp.AppForms
             this.buildingsTableAdapter.Fill(this.telephone_directory_DBDataSet.Buildings);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "telephone_directory_DBDataSet.Departments". При необходимости она может быть перемещена или удалена.
             this.departmentsTableAdapter.Fill(this.telephone_directory_DBDataSet.Departments);
-            // TODO: данная строка кода позволяет загрузить данные в таблицу "telephone_directory_DBDataSet.Positions". При необходимости она может быть перемещена или удалена.
-            this.positionsTableAdapter.Fill(this.telephone_directory_DBDataSet.Positions);
             // TODO: данная строка кода позволяет загрузить данные в таблицу "telephone_directory_DBDataSet.Subscribers". При необходимости она может быть перемещена или удалена.
             this.subscribersTableAdapter.Fill(this.telephone_directory_DBDataSet.Subscribers);
+            // TODO: данная строка кода позволяет загрузить данные в таблицу "telephone_directory_DBDataSet.Positions". При необходимости она может быть перемещена или удалена.
+            this.positionsTableAdapter.Fill(this.telephone_directory_DBDataSet.Positions);
 
         }
     }

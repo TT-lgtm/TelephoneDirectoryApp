@@ -18,9 +18,9 @@ namespace TelephoneDirectoryApp.AppForms
         public MainForm(Users user)
         {
             InitializeComponent();
+            _currentUser = user;
             ShowSubscribers();
             this.WindowState = FormWindowState.Maximized;
-            _currentUser = user;
             ShowGreeting();
         }
 

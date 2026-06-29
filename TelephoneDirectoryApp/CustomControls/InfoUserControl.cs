@@ -20,8 +20,9 @@ namespace TelephoneDirectoryApp.CustomControls
         {
             InitializeComponent();
             _subscribers = subscribers;
-            SetLabelTextValues();
             _currentUser = currentUser;
+            SetLabelTextValues();
+            SetAccess();
         }
 
         /// <summary>
@@ -40,10 +41,18 @@ namespace TelephoneDirectoryApp.CustomControls
             labelOffice.Text = $"Кабинет: {_subscribers.Offices.RoomNumber}";
         }
 
+        private void SetAccess()
+        {
+            if (_currentUser.RoleId == 1)
+                dreamButtonChange.Visible = true;
+            else
+                dreamButtonChange.Visible = false;
+        }
+
         private void dreamButtonChange_Click(object sender, EventArgs e)
         {
-            MyCardForm myCardForm = new MyCardForm(_currentUser);
-            myCardForm.ShowDialog();
+            ChangeCardForm changeCardForm = new ChangeCardForm(_subscribers);
+            changeCardForm.ShowDialog();
         }
     }
 }

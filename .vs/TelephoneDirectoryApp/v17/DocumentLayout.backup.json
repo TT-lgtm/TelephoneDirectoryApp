@@ -7,6 +7,22 @@
       "RelativeMoniker": "D:0:0:{83B2058A-8E23-4554-A5B0-FF37DD1B9FEB}|TelephoneDirectoryApp\\TelephoneDirectoryApp.csproj|solutionrelative:telephonedirectoryapp\\appforms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{83B2058A-8E23-4554-A5B0-FF37DD1B9FEB}|TelephoneDirectoryApp\\TelephoneDirectoryApp.csproj|D:\\Projects\\TelephoneDirectoryApp\\telephonedirectoryapp\\appforms\\mycardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83B2058A-8E23-4554-A5B0-FF37DD1B9FEB}|TelephoneDirectoryApp\\TelephoneDirectoryApp.csproj|solutionrelative:telephonedirectoryapp\\appforms\\mycardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83B2058A-8E23-4554-A5B0-FF37DD1B9FEB}|TelephoneDirectoryApp\\TelephoneDirectoryApp.csproj|d:\\projects\\telephonedirectoryapp\\telephonedirectoryapp\\appforms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83B2058A-8E23-4554-A5B0-FF37DD1B9FEB}|TelephoneDirectoryApp\\TelephoneDirectoryApp.csproj|solutionrelative:telephonedirectoryapp\\appforms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83B2058A-8E23-4554-A5B0-FF37DD1B9FEB}|TelephoneDirectoryApp\\TelephoneDirectoryApp.csproj|D:\\Projects\\TelephoneDirectoryApp\\telephonedirectoryapp\\customcontrols\\infousercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83B2058A-8E23-4554-A5B0-FF37DD1B9FEB}|TelephoneDirectoryApp\\TelephoneDirectoryApp.csproj|solutionrelative:telephonedirectoryapp\\customcontrols\\infousercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{83B2058A-8E23-4554-A5B0-FF37DD1B9FEB}|TelephoneDirectoryApp\\TelephoneDirectoryApp.csproj|d:\\projects\\telephonedirectoryapp\\telephonedirectoryapp\\appforms\\changecardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{83B2058A-8E23-4554-A5B0-FF37DD1B9FEB}|TelephoneDirectoryApp\\TelephoneDirectoryApp.csproj|solutionrelative:telephonedirectoryapp\\appforms\\changecardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{83B2058A-8E23-4554-A5B0-FF37DD1B9FEB}|TelephoneDirectoryApp\\TelephoneDirectoryApp.csproj|D:\\Projects\\TelephoneDirectoryApp\\telephonedirectoryapp\\appforms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{83B2058A-8E23-4554-A5B0-FF37DD1B9FEB}|TelephoneDirectoryApp\\TelephoneDirectoryApp.csproj|solutionrelative:telephonedirectoryapp\\appforms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
@@ -15,20 +31,16 @@
       "RelativeMoniker": "D:0:0:{83B2058A-8E23-4554-A5B0-FF37DD1B9FEB}|TelephoneDirectoryApp\\TelephoneDirectoryApp.csproj|solutionrelative:telephonedirectoryapp\\appforms\\mycardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{83B2058A-8E23-4554-A5B0-FF37DD1B9FEB}|TelephoneDirectoryApp\\TelephoneDirectoryApp.csproj|d:\\projects\\telephonedirectoryapp\\telephonedirectoryapp\\appforms\\changecardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{83B2058A-8E23-4554-A5B0-FF37DD1B9FEB}|TelephoneDirectoryApp\\TelephoneDirectoryApp.csproj|solutionrelative:telephonedirectoryapp\\appforms\\changecardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{83B2058A-8E23-4554-A5B0-FF37DD1B9FEB}|TelephoneDirectoryApp\\TelephoneDirectoryApp.csproj|d:\\projects\\telephonedirectoryapp\\telephonedirectoryapp\\appforms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{83B2058A-8E23-4554-A5B0-FF37DD1B9FEB}|TelephoneDirectoryApp\\TelephoneDirectoryApp.csproj|solutionrelative:telephonedirectoryapp\\appforms\\loginform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{83B2058A-8E23-4554-A5B0-FF37DD1B9FEB}|TelephoneDirectoryApp\\TelephoneDirectoryApp.csproj|D:\\Projects\\TelephoneDirectoryApp\\telephonedirectoryapp\\customcontrols\\infousercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{83B2058A-8E23-4554-A5B0-FF37DD1B9FEB}|TelephoneDirectoryApp\\TelephoneDirectoryApp.csproj|solutionrelative:telephonedirectoryapp\\customcontrols\\infousercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83B2058A-8E23-4554-A5B0-FF37DD1B9FEB}|TelephoneDirectoryApp\\TelephoneDirectoryApp.csproj|D:\\Projects\\TelephoneDirectoryApp\\telephonedirectoryapp\\customcontrols\\infousercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83B2058A-8E23-4554-A5B0-FF37DD1B9FEB}|TelephoneDirectoryApp\\TelephoneDirectoryApp.csproj|solutionrelative:telephonedirectoryapp\\customcontrols\\infousercontrol.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{83B2058A-8E23-4554-A5B0-FF37DD1B9FEB}|TelephoneDirectoryApp\\TelephoneDirectoryApp.csproj|D:\\Projects\\TelephoneDirectoryApp\\telephonedirectoryapp\\appforms\\mycardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{83B2058A-8E23-4554-A5B0-FF37DD1B9FEB}|TelephoneDirectoryApp\\TelephoneDirectoryApp.csproj|solutionrelative:telephonedirectoryapp\\appforms\\mycardform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,7 +50,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Bookmark",
@@ -46,7 +58,70 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LoginForm.cs",
+              "DocumentMoniker": "D:\\Projects\\TelephoneDirectoryApp\\TelephoneDirectoryApp\\AppForms\\LoginForm.cs",
+              "RelativeDocumentMoniker": "TelephoneDirectoryApp\\AppForms\\LoginForm.cs",
+              "ToolTip": "D:\\Projects\\TelephoneDirectoryApp\\TelephoneDirectoryApp\\AppForms\\LoginForm.cs",
+              "RelativeToolTip": "TelephoneDirectoryApp\\AppForms\\LoginForm.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-29T23:18:18.488Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "InfoUserControl.cs",
+              "DocumentMoniker": "D:\\Projects\\TelephoneDirectoryApp\\TelephoneDirectoryApp\\CustomControls\\InfoUserControl.cs",
+              "RelativeDocumentMoniker": "TelephoneDirectoryApp\\CustomControls\\InfoUserControl.cs",
+              "ToolTip": "D:\\Projects\\TelephoneDirectoryApp\\TelephoneDirectoryApp\\CustomControls\\InfoUserControl.cs",
+              "RelativeToolTip": "TelephoneDirectoryApp\\CustomControls\\InfoUserControl.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAQwC0AAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T15:28:06.706Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MyCardForm.cs",
+              "DocumentMoniker": "D:\\Projects\\TelephoneDirectoryApp\\TelephoneDirectoryApp\\AppForms\\MyCardForm.cs",
+              "RelativeDocumentMoniker": "TelephoneDirectoryApp\\AppForms\\MyCardForm.cs",
+              "ToolTip": "D:\\Projects\\TelephoneDirectoryApp\\TelephoneDirectoryApp\\AppForms\\MyCardForm.cs",
+              "RelativeToolTip": "TelephoneDirectoryApp\\AppForms\\MyCardForm.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAABYAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T11:36:30.204Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ChangeCardForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "D:\\Projects\\TelephoneDirectoryApp\\TelephoneDirectoryApp\\AppForms\\ChangeCardForm.cs",
+              "RelativeDocumentMoniker": "TelephoneDirectoryApp\\AppForms\\ChangeCardForm.cs",
+              "ToolTip": "D:\\Projects\\TelephoneDirectoryApp\\TelephoneDirectoryApp\\AppForms\\ChangeCardForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "TelephoneDirectoryApp\\AppForms\\ChangeCardForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-29T22:47:48.685Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MyCardForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "D:\\Projects\\TelephoneDirectoryApp\\TelephoneDirectoryApp\\AppForms\\MyCardForm.cs",
+              "RelativeDocumentMoniker": "TelephoneDirectoryApp\\AppForms\\MyCardForm.cs",
+              "ToolTip": "D:\\Projects\\TelephoneDirectoryApp\\TelephoneDirectoryApp\\AppForms\\MyCardForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "TelephoneDirectoryApp\\AppForms\\MyCardForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-06-17T11:11:24.213Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "LoginForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "D:\\Projects\\TelephoneDirectoryApp\\TelephoneDirectoryApp\\AppForms\\LoginForm.cs",
               "RelativeDocumentMoniker": "TelephoneDirectoryApp\\AppForms\\LoginForm.cs",
@@ -64,14 +139,14 @@
               "RelativeDocumentMoniker": "TelephoneDirectoryApp\\AppForms\\MainForm.cs",
               "ToolTip": "D:\\Projects\\TelephoneDirectoryApp\\TelephoneDirectoryApp\\AppForms\\MainForm.cs",
               "RelativeToolTip": "TelephoneDirectoryApp\\AppForms\\MainForm.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAApwDsAAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACEAAAA7AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-06-16T10:36:15Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "MainForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "D:\\Projects\\TelephoneDirectoryApp\\TelephoneDirectoryApp\\AppForms\\MainForm.cs",
               "RelativeDocumentMoniker": "TelephoneDirectoryApp\\AppForms\\MainForm.cs",
@@ -83,45 +158,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "MyCardForm.cs",
-              "DocumentMoniker": "D:\\Projects\\TelephoneDirectoryApp\\TelephoneDirectoryApp\\AppForms\\MyCardForm.cs",
-              "RelativeDocumentMoniker": "TelephoneDirectoryApp\\AppForms\\MyCardForm.cs",
-              "ToolTip": "D:\\Projects\\TelephoneDirectoryApp\\TelephoneDirectoryApp\\AppForms\\MyCardForm.cs",
-              "RelativeToolTip": "TelephoneDirectoryApp\\AppForms\\MyCardForm.cs",
-              "ViewState": "AgIAAIEAAAAAAAAAAAAUwJgAAAAXAAAAAAAAAA==",
+              "DocumentIndex": 7,
+              "Title": "ChangeCardForm.cs",
+              "DocumentMoniker": "D:\\Projects\\TelephoneDirectoryApp\\TelephoneDirectoryApp\\AppForms\\ChangeCardForm.cs",
+              "RelativeDocumentMoniker": "TelephoneDirectoryApp\\AppForms\\ChangeCardForm.cs",
+              "ToolTip": "D:\\Projects\\TelephoneDirectoryApp\\TelephoneDirectoryApp\\AppForms\\ChangeCardForm.cs",
+              "RelativeToolTip": "TelephoneDirectoryApp\\AppForms\\ChangeCardForm.cs",
+              "ViewState": "AgIAAMUAAAAAAAAAAAAAwNQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-17T11:36:30.204Z",
+              "WhenOpened": "2026-06-29T22:48:54.575Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "InfoUserControl.cs",
-              "DocumentMoniker": "D:\\Projects\\TelephoneDirectoryApp\\TelephoneDirectoryApp\\CustomControls\\InfoUserControl.cs",
-              "RelativeDocumentMoniker": "TelephoneDirectoryApp\\CustomControls\\InfoUserControl.cs",
-              "ToolTip": "D:\\Projects\\TelephoneDirectoryApp\\TelephoneDirectoryApp\\CustomControls\\InfoUserControl.cs",
-              "RelativeToolTip": "TelephoneDirectoryApp\\CustomControls\\InfoUserControl.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAACcAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-17T15:28:06.706Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MyCardForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "D:\\Projects\\TelephoneDirectoryApp\\TelephoneDirectoryApp\\AppForms\\MyCardForm.cs",
-              "RelativeDocumentMoniker": "TelephoneDirectoryApp\\AppForms\\MyCardForm.cs",
-              "ToolTip": "D:\\Projects\\TelephoneDirectoryApp\\TelephoneDirectoryApp\\AppForms\\MyCardForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "TelephoneDirectoryApp\\AppForms\\MyCardForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-06-17T11:11:24.213Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 9,
               "Title": "InfoUserControl.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
               "DocumentMoniker": "D:\\Projects\\TelephoneDirectoryApp\\TelephoneDirectoryApp\\CustomControls\\InfoUserControl.cs",
               "RelativeDocumentMoniker": "TelephoneDirectoryApp\\CustomControls\\InfoUserControl.cs",
